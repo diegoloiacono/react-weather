@@ -1,51 +1,55 @@
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
+
+.blue-gradient {
+  background: linear-gradient(to bottom, #4579a7, #295a8b);
+}
+
+.orange-gradient {
+  background: linear-gradient(to bottom, #ffbe86, #ec8e4f);
+}
+
+.red-gradient {
+  background: linear-gradient(to bottom, #fc847d, #813a3a);
+}
+
 
 body {
-    min-height: 100vh;
-    padding: 2rem 2rem;
-    background: linear-gradient(45deg, rgba(69,2,103,1), rgba(65,0,187,1));
+  min-height: 100vh;
+  padding: 2rem 2rem;
 }
+
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-
-.input-container {
-    text-align: center;
-	display:flex;
-    padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.input-container {
+  padding-bottom: 2rem;
+  }
 
 .city-name {
-font-size: 32px;
-font-weight: 400;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 .main-temp {
-    font-size: 64px;
-    font-weight: 600;
+  font-size: 64px;
+  font-weight: 600;
 }
 
 .weather-details {
-    padding-top: 2rem;
-    font-size: 16px;
-    font-weight: 200;
-}
-
-.weather-icons {
-    padding-right: 32px;
+  padding-top: 2rem;
+  font-size: 16px;
+  font-weight: 200;
 }
