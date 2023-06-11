@@ -4,12 +4,9 @@ import {
   faTemperatureArrowUp,
   faTemperatureArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
+import { getWeatherIconUrl } from "../logic/utils";
 
 const Forecast = ({ forecastData, isLoading, error }) => {
-  const getWeatherIconUrl = (iconCode) => {
-    return `https://openweathermap.org/img/w/${iconCode}.png`;
-  };
-
   if (isLoading) {
     return <p>Loading...</p>;
   }
