@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TextInput from "./assets/components/TextInput";
-import useGeolocation from "./assets/logic/useGeoLocation";
-import useWeatherData from "./assets/logic/useWeatherData";
+import useGeolocation from "./assets/services/useGeoLocation";
+import useWeatherData from "./assets/services/useWeatherData";
 import WeatherDetails from "./assets/components/WeatherDetails";
 import Forecast from "./assets/components/Forecast";
 
@@ -29,7 +29,7 @@ const App = () => {
   }
 
   return (
-    <div className="container">
+    <div>
       <TextInput onCityChange={handleCityChange} />
 
       <WeatherDetails weatherData={weatherData} />

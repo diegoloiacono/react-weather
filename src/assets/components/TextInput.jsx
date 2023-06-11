@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
-import "./TextInput.css";
 
 const TextInput = ({ onCityChange }) => {
   const [inputValue, setInputValue] = useState("");
